@@ -1,0 +1,9 @@
+Scenario:
+You are driving on a highway road with 2 lanes, and you are currently driving in the right lane. Navigation indicates you should change to the right lane.
+Your current position is (19.76, 10.07), speed is (-24.11, -0.00) m/s, acceleration is (-0.07, -0.03) m/s^2.
+There are other vehicles driving around you, and below is their basic information:
+-Vehicle `575.0` is driving behind in the left lane. Position: (45.08, 14.15), Speed: (-46.54, -0.16) m/s, Acceleration: (0.20, 0.02) m/s^2, quantified perceived risk: 123635.00.
+
+-Vehicle `577.0` is driving behind in the left lane. Position: (74.30, 14.11), Speed: (-46.59, 0.03) m/s, Acceleration: (-0.16, 0.14) m/s^2, quantified perceived risk: 68200.51.
+Vehicles 575, 577 exhibit exceptional risk. Exercise rigorous caution with these vehicles, and avoid actions involving them until the risk is sufficiently mitigated.
+response: #### 0

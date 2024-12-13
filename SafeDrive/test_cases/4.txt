@@ -1,0 +1,22 @@
+Scenario:
+You are driving on a highway road with 2 lanes, and you are currently driving in the right lane. Navigation indicates you should change to the left lane.
+Your current position is (353.28, 10.07), speed is (-30.89, 0.10) m/s, acceleration is (0.09, 0.04) m/s^2.
+There are other vehicles driving around you, and below is their basic information:
+-Vehicle `468.0` is driving in front in the right lane. Position: (306.90, 10.95), Speed: (-43.81, -0.31) m/s, Acceleration: (-0.40, 0.32) m/s^2, quantified perceived risk: 7162.87.
+
+-Vehicle `471.0` is driving in front in the left lane. Position: (365.26, 14.51), Speed: (-39.94, 0.03) m/s, Acceleration: (-0.01, -0.02) m/s^2, quantified perceived risk: 34855.00.
+
+-Vehicle `472.0` is driving behind in the right lane. Position: (380.09, 10.05), Speed: (-31.24, 0.04) m/s, Acceleration: (-0.18, 0.08) m/s^2, quantified perceived risk: 16557.04.
+
+-Vehicle `473.0` is driving behind in the left lane. Position: (394.09, 14.41), Speed: (-39.17, 0.10) m/s, Acceleration: (-0.26, -0.00) m/s^2, quantified perceived risk: 20365.78.
+Risk Quantification Structure: 
+According to the structure of the risk field formulation, if the quantified perceived risk from a surrounding vehicle is high, there are several potential reasons. Keep the followings in mind when the QPR is elevated:
+- The distance between the ego vehicle and the surrounding vehicle is short. Vehicles might be too close to each other.
+- The speed of either the ego vehicle or the surrounding vehicle is high, which usually happens when one vehicle is overtaking the other.
+- The heading angle of the ego vehicle or the surrounding vehicle is towards the other, which usually happens during lane changes or cutting in.
+
+
+Vehicles 468 exhibit minimal risk levels, requiring no immediate intervention.
+Vehicles 472, 473 exhibit risk above typical levels. Maintain awareness of these vehicles during maneuvers, always ensuring a safe time headway.
+Vehicles 471 exhibit exceptional risk. Exercise rigorous caution with these vehicles, and avoid actions involving them until the risk is sufficiently mitigated.
+response: #### 0

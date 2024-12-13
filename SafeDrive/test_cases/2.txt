@@ -1,0 +1,19 @@
+Scenario:
+You are driving on a highway road with 2 lanes, and you are currently driving in the right lane. Navigation indicates you should change to the left lane. 
+Your current position is (269.28, 10.85), speed is (-24.40, -0.08) m/s, acceleration is (0.06, -0.03) m/s^2.
+There are other vehicles driving around you, and below is their basic information:
+-Vehicle `993.0` is driving in front in the right lane. Position: (207.79, 10.47), Speed: (-24.49, 0.02) m/s, Acceleration: (0.00, -0.07) m/s^2, quantified perceived risk: 855.87.
+-Vehicle `994.0` is driving in front in the right lane. Position: (244.39, 9.53), Speed: (-24.73, 0.05) m/s, Acceleration: (-0.05, 0.03) m/s^2, quantified perceived risk: 11140.47. 
+-Vehicle `999.0` is driving behind in the left lane. Position: (292.34, 14.12), Speed: (-44.26, 0.09) m/s, Acceleration: (-0.63, -0.08) m/s^2, quantified perceived risk: 43897.07. 
+-Vehicle `1000.0` is driving behind in the left lane. Position: (330.28, 14.74), Speed: (-42.10, 0.04) m/s, Acceleration: (-0.53, -0.04) m/s^2, quantified perceived risk: 14038.56. 
+
+Vehicles 993, 994 exhibit minimal risk levels, requiring no immediate intervention.
+Vehicles 1000 exhibit risk slightly above typical levels. Maintain increased awareness of these vehicles during decision making.
+Vehicles 999 exhibit exceptional risk. Exercise rigorous caution with these vehicles, and avoid taking actions involving them until the risk is sufficiently mitigated.
+Risk Quantification Structure: 
+According to the structure of the risk field formulation, if the quantified perceived risk from a surrounding vehicle is high, there are several potential reasons. Keep the followings in mind when the QPR is elevated:
+- The distance between the ego vehicle and the surrounding vehicle is short. Vehicles might be too close to each other.
+- The speed of either the ego vehicle or the surrounding vehicle is high, which usually happens when one vehicle is overtaking the other.
+- The heading angle of the ego vehicle or the surrounding vehicle is towards the other, which usually happens during lane changes or cutting in.
+
+response: #### 0

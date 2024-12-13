@@ -1,0 +1,21 @@
+Scenario:
+You are driving on a highway road with 2 lanes, and you are currently driving in the right lane. Navigation indicates you should change to the left lane.
+Your current position is (263.48, 11.24), speed is (-33.97, 0.13) m/s, acceleration is (0.38, 0.01) m/s^2.
+There are other vehicles driving around you, and below is their basic information:
+-Vehicle `716.0` is driving in front in the left lane. Position: (231.95, 14.18), Speed: (-34.68, 0.16) m/s, Acceleration: (0.61, -0.04) m/s^2, quantified perceived risk: 17866.98.
+
+-Vehicle `717.0` is driving in front in the left lane. Position: (254.62, 14.67), Speed: (-34.80, 0.03) m/s, Acceleration: (0.24, 0.04) m/s^2, quantified perceived risk: 26020.95.
+
+-Vehicle `719.0` is driving behind in the left lane. Position: (292.12, 14.28), Speed: (-32.30, -0.20) m/s, Acceleration: (0.41, 0.01) m/s^2, quantified perceived risk: 16377.41.
+
+-Vehicle `720.0` is driving behind in the left lane. Position: (332.13, 13.71), Speed: (-33.60, -0.13) m/s, Acceleration: (0.74, 0.06) m/s^2, quantified perceived risk: 2590.06.
+Vehicles 720 exhibit minimal risk levels, requiring no immediate intervention.
+Vehicles 716, 717, 719 exhibit risk above typical levels. Maintain awareness of these vehicles during maneuvers, always ensuring a safe time headway.
+Risk Quantification Structure: 
+According to the structure of the risk field formulation, if the quantified perceived risk from a surrounding vehicle is high, there are several potential reasons. Keep the followings in mind when the QPR is elevated:
+- The distance between the ego vehicle and the surrounding vehicle is short. Vehicles might be too close to each other.
+- The speed of either the ego vehicle or the surrounding vehicle is high, which usually happens when one vehicle is overtaking the other.
+- The heading angle of the ego vehicle or the surrounding vehicle is towards the other, which usually happens during lane changes or cutting in.
+
+
+response: #### 0

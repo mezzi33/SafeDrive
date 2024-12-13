@@ -1,0 +1,14 @@
+Scenario:
+You are driving on a highway road with 2 lanes, and you are currently driving in the left lane. Navigation instructions suggest a lane change to the right lane. 
+Your current position is (381.69, 22.82), speed is (34.51, 0.14) m/s, acceleration is (0.15, 0.09) m/s^2. There are other vehicles driving around you, and below is their basic information:
+- Vehicle `6.0` is driving in front in the right lane. Position: (401.21, 26.58), Speed: (23.38, 0.07) m/s, Acceleration: (0.02, 0.03) m/s^2, quantified perceived risk: 55962.14. 
+- Vehicle `10.0` is driving behind you in the right lane . Position: (358.45, 26.72), Speed: (22.31, 0.14) m/s, Acceleration: (-0.13, -0.01) m/s^2, quantified perceived risk: 6341.43
+- Vehicle `11.0` is driving behind you in the left lane. Position: (347.83, 24.55), Speed: (24.97, -1.16) m/s, Acceleration: (0.78, 0.04) m/s^2, quantified perceived risk: 5689.99
+Vehicles 10, 11 exhibit minimal risk levels, requiring no immediate intervention.
+Vehicle 6 exhibits exceptional risk. Exercise rigorous caution with these vehicles, and avoid taking actions involving them until the risk is sufficiently mitigated.
+Risk Quantification Structure: 
+According to the structure of the risk field formulation, if the quantified perceived risk from a surrounding vehicle is high, there are several potential reasons. Keep the followings in mind when the QPR is elevated:
+- The distance between the ego vehicle and the surrounding vehicle is short. Vehicles might be too close to each other.
+- The speed of either the ego vehicle or the surrounding vehicle is high, which usually happens when one vehicle is overtaking the other.
+- The heading angle of the ego vehicle or the surrounding vehicle is towards the other, which usually happens during lane changes or cutting in.
+response: #### 0
