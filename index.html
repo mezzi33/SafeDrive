@@ -93,10 +93,10 @@
         }
         .button {
             display: flex;
-            align-items: center;
-            gap: 8px;
+            align-items: center; /* Centers the text vertically */
+            justify-content: center; /* Centers the text horizontally */
             text-decoration: none;
-            background: #333;
+            background: #333; /* Dark background */
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -106,7 +106,7 @@
             transition: background 0.3s ease;
         }
         .button:hover {
-            background: #555;
+            background: #555; /* Slightly lighter on hover */
         }
         .button-icon {
             width: 20px;
@@ -142,26 +142,20 @@
 
 <div class="buttons">
     <a href="https://mezzi33.github.io/SafeDrive/" class="button">
-        <alt="Paper Icon" class="button-icon"> Paper
+        Paper
     </a>
     <a href="https://github.com/mezzi33/SafeDrive/tree/main/SafeDrive" class="button">
-        <alt="GitHub Icon" class="button-icon"> Code
+        Code
     </a>
     <a href="https://arxiv.org/abs/your-paper-link" class="button">
-        <alt="arXiv Icon" class="button-icon"> arXiv
+        arXiv
     </a>
-</div>
-
-<div class="gif-item">
-    <img src="figures/highd.gif" alt="HighD">
-    <p class="gif-caption">Dynamic Risk Assessment</p>
 </div>
 
 <div class="content">
     <h2 class="section-title">Abstract</h2>
     <p>
-        Recent advancements in autonomous vehicles (AVs) leverage Large Language Models (LLMs) to perform well in normal driving scenarios. However, ensuring safety in dynamic, high-risk environments and managing safety-critical long-tail events remains a significant challenge. The SafeDrive framework enhances AV safety and adaptability through modular design, extensive evaluation, and real-world validation.
-    </p>
+            SafeDrive is a knowledge- and data-driven decision-making framework designed to enhance the safety and adaptability of autonomous vehicles (AVs) in dynamic, high-risk scenarios. It features four modular components: (1) a Risk Module for quantifying multi-factor risks; (2) a Memory Module for scenario storage and retrieval; (3) an LLM-powered Reasoning Module for context-aware decision-making; and (4) a Reflection Module for iterative decision refinement. Evaluations on real-world traffic datasets (highD, inD, rounD) demonstrate SafeDrive's ability to achieve a 100% safety rate, align with human-like driving behaviors (85%+ decision accuracy), and adapt to unpredictable situations, showcasing its potential for improving AV performance in challenging environments.    </p>
 </div>
 
 <div class="content">
