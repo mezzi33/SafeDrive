@@ -1,10 +1,11 @@
 # SafeDrive: A Knowledge- and Data-Driven Risk-Sensitive Decision-Making Framework for Autonomous Vehicles
 
 <div class="content">
+    SafeDrive is a risk-sensitive decision-making framework for autonomous vehicles (AVs) that generates safe, real-time decisions based on real-world scene description inputs. It operates through a four-module cycle: the Risk Quantification Module, Memory Module, Reasoning Module, and Reflection Module, with large language models (LLMs) serving as the central agent.
+
     <h2 class="section-title">Overview of the Framework</h2>
     <img src="../figures/Fig.1.png" alt="SafeDrive Framework Overview">
 </div>
-SafeDrive is a risk-sensitive decision-making framework for autonomous vehicles (AVs) that generates safe, real-time decisions based on real-world scene description inputs. It operates through a four-module cycle: the Risk Quantification Module, Memory Module, Reasoning Module, and Reflection Module, with large language models (LLMs) serving as the central agent.
 
 
 # Getting Started
