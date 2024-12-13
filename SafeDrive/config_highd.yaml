@@ -1,0 +1,12 @@
+OPENAI_API_TYPE: 'openai'
+OPENAI_KEY: 'your-api-key-here' 
+OPENAI_CHAT_MODEL: 'gpt-4o'
+
+temperature: 0.5
+verbose: true
+
+reflection_module: true
+few_shot_num: 3
+
+
+
