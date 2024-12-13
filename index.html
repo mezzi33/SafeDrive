@@ -79,6 +79,26 @@
             margin-top: 20px;
             text-align: justify;
         }
+        .gif-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .gif-gallery img {
+            max-width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gif-caption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -109,6 +129,21 @@
         <a href="https://your-paper-link" class="button">Paper</a>
         <a href="https://github.com/mezzi33/SafeDrive" class="button">Code</a>
         <a href="https://arxiv.org/abs/your-paper-link" class="button">arXiv</a>
+    </div>
+</div>
+
+<div class="gif-gallery">
+    <div>
+        <img src="figure/gif1.gif" alt="GIF 1">
+        <p class="gif-caption">Description for GIF 1</p>
+    </div>
+    <div>
+        <img src="figure/gif2.gif" alt="GIF 2">
+        <p class="gif-caption">Description for GIF 2</p>
+    </div>
+    <div>
+        <img src="figure/gif3.gif" alt="GIF 3">
+        <p class="gif-caption">Description for GIF 3</p>
     </div>
 </div>
 
