@@ -1,6 +1,5 @@
 # SafeDrive: A Knowledge- and Data-Driven Risk-Sensitive Decision-Making Framework for Autonomous Vehicles
 
-## Framework Overview
 <div class="content">
     <h2 class="section-title">Overview of the Framework</h2>
     <img src="../figures/Fig.1.png" alt="SafeDrive Framework Overview">
