@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeDrive: Knowledge- and Data-Driven Risk-Sensitive Decision-Making for Autonomous Vehicles</title>
-    <meta name="description" content="SafeDrive: Knowledge- and Data-Driven Risk-Sensitive Decision-Making Framework for Autonomous Vehicles">
-    <meta name="keywords" content="SafeDrive, Autonomous Vehicles, Large Language Models, Risk-Sensitive Decision-Making">
+    <title>SafeDrive: Knowledge- and Data-Driven Risk-Sensitive Decision-Making</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,10 +21,6 @@
         header h1 {
             font-size: 2em;
             margin-bottom: 10px;
-        }
-        header h2 {
-            font-size: 1.2em;
-            color: #555;
         }
         .authors {
             font-size: 0.9em;
@@ -53,34 +47,6 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .button {
-            text-decoration: none;
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1em;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        .button:hover {
-            background: #45a049;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.8em;
-            color: #888;
-            margin: 20px 0;
-        }
-        .abstract {
-            margin-top: 20px;
-            text-align: justify;
-        }
         .gif-gallery {
             display: flex;
             flex-wrap: wrap;
@@ -89,9 +55,16 @@
             margin-top: 40px;
             margin-bottom: 40px;
         }
-        .gif-gallery img {
-            max-width: 300px;
-            height: auto;
+        .gif-item {
+            flex: 1 1 100%; /* Full width for the first GIF */
+            text-align: center;
+        }
+        .gif-item:nth-child(2),
+        .gif-item:nth-child(3) {
+            flex: 1 1 calc(50% - 20px); /* Half width for the second and third GIFs */
+        }
+        .gif-item img {
+            max-width: 100%;
             border: 2px solid #ddd;
             border-radius: 5px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -102,12 +75,18 @@
             color: #555;
             margin-top: 10px;
         }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #888;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>SafeDrive: Knowledge- and Data-Driven Risk-Sensitive Decision-Making for Autonomous Vehicles with Large Language Models</h1>
+    <h1>SafeDrive: Knowledge- and Data-Driven Risk-Sensitive Decision-Making</h1>
     <p class="authors">
         Zhiyuan Zhou<sup>1</sup>, Heye Huang<sup>1,2</sup>, Guanya Shi<sup>3</sup>, Boqi Li<sup>4</sup>, and Shiyue Zhao<sup>5</sup>
         <br>
@@ -119,31 +98,22 @@
 </header>
 
 <div class="content">
-    <div class="abstract">
-        <h2>Abstract</h2>
-        <p>
-            Recent advancements in autonomous vehicles (AVs) leverage Large Language Models (LLMs) to perform well in normal driving scenarios. However, ensuring safety in dynamic, high-risk environments and managing safety-critical long-tail events remains a significant challenge. To address these issues, we propose SafeDrive, a knowledge- and data-driven risk-sensitive decision-making framework, to enhance AV safety and adaptability.
-        </p>
-    </div>
-    <img src="figures/Fig.1.png" alt="SafeDrive framework overview">
-    <p style="text-align: center;">Overview of SafeDrive: a knowledge- and data-driven risk-sensitive decision-making framework.</p>
-    <div class="buttons">
-        <a href="https://your-paper-link" class="button">Paper</a>
-        <a href="https://github.com/mezzi33/SafeDrive" class="button">Code</a>
-        <a href="https://arxiv.org/abs/your-paper-link" class="button">arXiv</a>
-    </div>
+    <h2>Abstract</h2>
+    <p>
+        Recent advancements in autonomous vehicles (AVs) leverage Large Language Models (LLMs) to perform well in normal driving scenarios. However, ensuring safety in dynamic, high-risk environments and managing safety-critical long-tail events remains a significant challenge. To address these issues, we propose SafeDrive, a knowledge- and data-driven risk-sensitive decision-making framework, to enhance AV safety and adaptability. 
+    </p>
 </div>
 
 <div class="gif-gallery">
-    <div>
+    <div class="gif-item">
         <img src="figures/highd.gif" alt="HighD">
         <p class="gif-caption">HighD traffic scenario visualized</p>
     </div>
-    <div>
+    <div class="gif-item">
         <img src="figures/ind.gif" alt="InD">
         <p class="gif-caption">InD traffic interaction scenario</p>
     </div>
-    <div>
+    <div class="gif-item">
         <img src="figures/round.gif" alt="RounD">
         <p class="gif-caption">RounD roundabout scenario</p>
     </div>
