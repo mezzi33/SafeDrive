@@ -9,72 +9,101 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
+            background-color: #f9f9f9;
             color: #333;
         }
-        a {
+        header {
+            text-align: center;
+            padding: 30px;
+            background: #ffffff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .authors {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .authors a {
             color: #4CAF50;
             text-decoration: none;
         }
-        a:hover {
+        .authors a:hover {
             text-decoration: underline;
+        }
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            text-decoration: none;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background: #45a049;
         }
         footer {
             text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
+            font-size: 0.8em;
+            color: #888;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>SafeDrive: Risk-Sensitive Decision-Making Framework</h1>
-    </header>
-    <div class="container">
-        <div class="section">
-            <h2>Abstract</h2>
-            <p>
-                Recent advancements in autonomous vehicles (AVs) leverage Large Language Models (LLMs) to perform well in normal driving scenarios. However, ensuring safety in dynamic, high-risk environments and managing safety-critical long-tail events remains a significant challenge. To address these issues, we propose <strong>SafeDrive</strong>, a knowledge- and data-driven risk-sensitive decision-making framework, to enhance AV safety and adaptability.
-            </p>
-        </div>
-        <div class="section image-container">
-            <h2>Framework Overview</h2>
-            <img src="./figures/Fig.1.pdf" alt="Framework Overview">
-        </div>
-        <div class="section">
-            <h2>Links</h2>
-            <ul>
-                <li><a href="https://your-github-repo-link" target="_blank">GitHub Repository</a></li>
-                <li><a href="https://arxiv.org/abs/your-paper-link" target="_blank">ArXiv Paper</a></li>
-            </ul>
-        </div>
+
+<header>
+    <h1>SafeDrive: Risk-Sensitive Decision-Making Framework</h1>
+    <h2>A Knowledge- and Data-Driven Approach for Autonomous Driving</h2>
+    <p class="authors">
+        Zhiyuan Zhou<sup>1</sup>, John Doe<sup>1,2</sup>, Jane Smith<sup>3</sup>, and Alice Zhang<sup>4</sup>  
+        <br>
+        <sup>1</sup>Your Institution, <sup>2</sup>Another Institution, <sup>3</sup>Example University, <sup>4</sup>Research Lab  
+        <br>
+        <a href="mailto:zhiyuan@example.com">First Author: zhiyuan@example.com</a>  
+        <a href="mailto:corresponding@example.com">Corresponding Author: corresponding@example.com</a>
+    </p>
+</header>
+
+<div class="content">
+    <img src="./figures/Fig.1.pdf" alt="Merging onto the highway from an entrance ramp">
+    <p style="text-align: center;">The scenario of merging onto the highway from an entrance ramp.</p>
+    <div class="buttons">
+        <a href="https://your-paper-link" class="button">Paper</a>
+        <a href="https://github.com/mezzi33/SafeDrive" class="button">Code</a>
+        <a href="https://arxiv.org/abs/your-paper-link" class="button">arXiv</a>
     </div>
-    <footer>
-        &copy; 2024 SafeDrive Project. All rights reserved.
-    </footer>
+</div>
+
+<footer>
+    &copy; 2024 SafeDrive Project. All rights reserved.
+</footer>
+
 </body>
 </html>
-
