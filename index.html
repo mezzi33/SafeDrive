@@ -42,6 +42,13 @@
             border-radius: 8px;
             box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
         }
+        .content p {
+            font-family: "Times New Roman", Times, serif; /* Times New Roman font */
+            font-size: 1.2em; /* Slightly larger font size */
+            line-height: 1.6; /* Improved line spacing */
+            text-indent: 2em; /* Indentation for paragraphs */
+            text-align: justify; /* Justified alignment */
+        }
         .content img {
             width: 100%; /* Ensure images fit the container width */
             border-radius: 5px;
@@ -78,6 +85,33 @@
             color: #555;
             margin-top: 10px;
         }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            background: #333; /* Dark background */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #555; /* Slightly lighter on hover */
+        }
+        .button-icon {
+            width: 20px; /* Icon size */
+            height: 20px;
+        }
         footer {
             text-align: center;
             font-size: 0.8em;
@@ -107,10 +141,31 @@
         <br>
         <sup>1</sup>University of Southern California, <sup>2</sup>University of Wisconsin-Madison, <sup>3</sup>Carnegie Mellon University, <sup>4</sup>University of Michigan-Ann Arbor, <sup>5</sup>Tsinghua University
         <br>
-        <a href="mailto:mezzy0303@gmail.com">First Author: mezzy0303@gmail.com</a>  
+        <a href="mailto:mezzy0303@gmail.com">First Author: mezzy0303@gmail.com</a>  , 
         <a href="mailto:hhuang468@wisc.edu">Corresponding Author: hhuang468@wisc.edu</a>
     </p>
 </header>
+
+
+<div class="buttons">
+    <a href="your-paper-link" class="button">
+        <img src="figures/paper-icon.png" alt="Paper Icon" class="button-icon"> Paper
+    </a>
+    <a href="https://github.com/your-repo" class="button">
+        <img src="figures/github-icon.png" alt="GitHub Icon" class="button-icon"> Code
+    </a>
+    <a href="https://arxiv.org/abs/your-paper-link" class="button">
+        <img src="figures/arxiv-icon.png" alt="arXiv Icon" class="button-icon"> arXiv
+    </a>
+</div>
+
+<div class="gif-gallery">
+    <h2 class="section-title">Real-Time Risk Quantification across Real-World Datasets</h2>
+    <!-- HighD GIF -->
+    <div class="gif-item">
+        <img src="figures/highd.gif" alt="HighD">
+        <p class="gif-caption">HighD Scenario</p>
+</div>
 
 <div class="content">
     <h2 class="section-title">Abstract</h2>
@@ -122,34 +177,26 @@
 <div class="content">
     <h2 class="section-title">Overview of the Framework</h2>
     <img src="figures/Fig.1.png" alt="SafeDrive Framework Overview">
-    <p class="overview">Integration of Risk Quantification and LLM-Based Agent for Risk-Sensitive Decision Making</p>
 </div>
 
 <div class="content">
-    <h2 class="section-title">Method Overview</h2>
+    <h2 class="section-title">Integration of Risk Quantification and LLM-Based Agent</h2>
     <img src="figures/Fig.2.png" alt="Method Overview">
 </div>
 
 <div class="content">
-    <h2 class="section-title">Results</h2>
+    <h2 class="section-title">Sample Reasoning Process</h2>
     <img src="figures/Fig.3.png" alt="Results and Evaluation">
 </div>
-
-<div class="gif-gallery">
-    <!-- HighD GIF -->
-    <div class="gif-item">
-        <img src="figures/highd.gif" alt="HighD">
-        <p class="gif-caption">HighD Scenario</p>
-    </div>
     <!-- Row with InD and RounD GIFs -->
     <div class="gif-row">
         <div class="gif-item">
             <img src="figures/ind.gif" alt="InD">
-            <p class="gif-caption">InD scenario</p>
+            <p class="gif-caption">InD Scenario</p>
         </div>
         <div class="gif-item">
             <img src="figures/round.gif" alt="RounD">
-            <p class="gif-caption">RounD roundabout scenario</p>
+            <p class="gif-caption">RounD Scenario</p>
         </div>
     </div>
 </div>
