@@ -77,20 +77,23 @@
         }
         
         .gif-item {
-            position: relative; /* Add relative positioning */
             flex: 1;
-            text-align: center;
+            text-align: center; /* Ensure the GIF and caption are centered */
+        }
+        
+        .gif-item img {
+            display: block; /* Remove any inline spacing */
+            margin: 0 auto; /* Center the GIF itself */
         }
         
         .gif-caption {
-            position: absolute; /* Position absolutely within .gif-item */
-            bottom: 10px; /* Place the caption at the bottom */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Adjust for perfect centering */
+            position: static; /* Change to static positioning to place below the GIF */
+            margin-top: 10px; /* Add space between the GIF and caption */
             font-size: 0.9em;
             color: #555;
-            margin: 0; /* Remove any extra margin */
+            text-align: center; /* Center the caption */
         }
+
         .buttons {
             display: flex;
             justify-content: center;
