@@ -69,20 +69,27 @@
             flex-direction: column;
             gap: 20px;
         }
+        
         .gif-row {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
+        
         .gif-item {
-            text-align: center;
+            position: relative; /* Add relative positioning */
             flex: 1;
-        }
-        .gif-caption {
             text-align: center;
+        }
+        
+        .gif-caption {
+            position: absolute; /* Position absolutely within .gif-item */
+            bottom: 10px; /* Place the caption at the bottom */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust for perfect centering */
             font-size: 0.9em;
             color: #555;
-            margin-top: 10px;
+            margin: 0; /* Remove any extra margin */
         }
         .buttons {
             display: flex;
