@@ -13,19 +13,23 @@
             color: #333;
         }
         header {
-            text-align: center;
+            max-width: 1200px; /* Match the content width */
+            margin: 0 auto; /* Center the header */
             padding: 30px;
             background: #ffffff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px; /* Rounded corners for a smoother look */
         }
         header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
         }
         .authors {
-            font-size: 0.9em;
+            font-size: 1em;
             color: #555;
             margin-bottom: 20px;
+            line-height: 1.6;
         }
         .authors a {
             color: #4CAF50;
@@ -33,6 +37,9 @@
         }
         .authors a:hover {
             text-decoration: underline;
+        }
+        .authors sup {
+            font-size: 0.9em;
         }
         .content {
             max-width: 1200px;
@@ -68,11 +75,11 @@
             gap: 20px;
         }
         .gif-item {
-            text-align: center; /* Center the image and caption horizontally */
+            text-align: center;
             flex: 1;
         }
         .gif-caption {
-            text-align: center; /* Center the caption text */
+            text-align: center;
             font-size: 0.9em;
             color: #555;
             margin-top: 10px;
@@ -85,10 +92,10 @@
         }
         .button {
             display: flex;
-            align-items: center; /* Centers the text vertically */
-            justify-content: center; /* Centers the text horizontally */
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
-            background: #333; /* Dark background */
+            background: #333;
             color: white;
             padding: 10px 20px;
             border-radius: 25px;
@@ -98,11 +105,7 @@
             transition: background 0.3s ease;
         }
         .button:hover {
-            background: #555; /* Slightly lighter on hover */
-        }
-        .button-icon {
-            width: 20px;
-            height: 20px;
+            background: #555;
         }
         footer {
             text-align: center;
@@ -125,62 +128,33 @@
     <p class="authors">
         Zhiyuan Zhou<sup>1</sup>, Heye Huang<sup>1,2</sup>, Guanya Shi<sup>3</sup>, Boqi Li<sup>4</sup>, and Shiyue Zhao<sup>5</sup>
         <br>
-        <sup>1</sup>University of Southern California, <sup>2</sup>University of Wisconsin-Madison, <sup>3</sup>Carnegie Mellon University, <sup>4</sup>University of Michigan-Ann Arbor, <sup>5</sup>Tsinghua University
+        <span><sup>1</sup>University of Southern California, <sup>2</sup>University of Wisconsin-Madison, <sup>3</sup>Carnegie Mellon University, <sup>4</sup>University of Michigan-Ann Arbor, <sup>5</sup>Tsinghua University</span>
         <br>
         <a href="mailto:mezzy0303@gmail.com">First Author: mezzy0303@gmail.com</a>,
         <a href="mailto:hhuang468@wisc.edu">Corresponding Author: hhuang468@wisc.edu</a>
     </p>
     <div class="buttons">
-    <a href="https://mezzi33.github.io/SafeDrive/" class="button">
-        Paper
-    </a>
-    <a href="https://github.com/mezzi33/SafeDrive/tree/main/SafeDrive" class="button">
-        Code
-    </a>
-    <a href="https://arxiv.org/abs/your-paper-link" class="button">
-        arXiv
-    </a>
+        <a href="https://mezzi33.github.io/SafeDrive/" class="button">Paper</a>
+        <a href="https://github.com/mezzi33/SafeDrive/tree/main/SafeDrive" class="button">Code</a>
+        <a href="https://arxiv.org/abs/your-paper-link" class="button">arXiv</a>
     </div>
 </header>
 
-
 <div class="content">
     <h2 class="section-title">Abstract</h2>
-    <p>
-        SafeDrive is a knowledge- and data-driven decision-making framework designed to enhance the safety and adaptability of autonomous vehicles (AVs) in dynamic, high-risk scenarios. It features four modular components: (1) a Risk Module for quantifying multi-factor risks; (2) a Memory Module for scenario storage and retrieval; (3) an LLM-powered Reasoning Module for context-aware decision-making; and (4) a Reflection Module for iterative decision refinement. Evaluations on real-world traffic datasets (highD, inD, rounD) demonstrate SafeDrive's ability to achieve a 100% safety rate, align with human-like driving behaviors (85%+ decision accuracy), and adapt to unpredictable situations, showcasing its potential for improving AV performance in challenging environments.    </p>
-<div class="gif-gallery">
-    <!-- HighD GIF -->
-    <div class="gif-item">
-        <img src="figures/highd.gif" alt="HighD">
-        <p class="gif-caption">HighD Scenario</p>
-    </div>
-
-    <!-- Row with InD and RounD GIFs -->
-    <div class="gif-row">
-        <div class="gif-item">
-            <img src="figures/ind.gif" alt="InD">
-            <p class="gif-caption">InD Scenario</p>
-        </div>
-        <div class="gif-item">
-            <img src="figures/round.gif" alt="RounD">
-            <p class="gif-caption">RounD Scenario</p>
-        </div>
-    </div>
+    <p>SafeDrive is a knowledge- and data-driven decision-making framework designed to enhance the safety and adaptability of autonomous vehicles (AVs) in dynamic, high-risk scenarios. It features four modular components: (1) a Risk Module for quantifying multi-factor risks; (2) a Memory Module for scenario storage and retrieval; (3) an LLM-powered Reasoning Module for context-aware decision-making; and (4) a Reflection Module for iterative decision refinement. Evaluations on real-world traffic datasets (highD, inD, rounD) demonstrate SafeDrive's ability to achieve a 100% safety rate, align with human-like driving behaviors (85%+ decision accuracy), and adapt to unpredictable situations, showcasing its potential for improving AV performance in challenging environments.</p>
 </div>
-    
 
 <div class="content">
     <h2 class="section-title">Overview of the Framework</h2>
     <img src="figures/Fig.1.png" alt="SafeDrive Framework Overview">
-    <p>        
-        SafeDrive combines naturalistic driving data with high-risk scenario analysis to enable AVs to make safe, adaptive decisions in complex, uncertain environments. It integrates diverse high-risk scenarios into a comprehensive database, processed by a dynamic risk quantification module using advanced modeling techniques like cost maps and multi-dimensional risk fields. The LLM decision-making module leverages chain-of-thought reasoning and adaptive memory to provide tailored, risk-sensitive decisions in real time. These decisions are embedded into AV systems, enabling real-time risk identification and adaptive warnings. A closed-loop reflection mechanism ensures continuous improvement by refining policies through iterative learning. This approach enhances safety, responsiveness, and adaptability, addressing the challenges of unpredictable, high-risk scenarios.</p>
+    <p>SafeDrive combines naturalistic driving data with high-risk scenario analysis to enable AVs to make safe, adaptive decisions in complex, uncertain environments. It integrates diverse high-risk scenarios into a comprehensive database, processed by a dynamic risk quantification module using advanced modeling techniques like cost maps and multi-dimensional risk fields. The LLM decision-making module leverages chain-of-thought reasoning and adaptive memory to provide tailored, risk-sensitive decisions in real time. These decisions are embedded into AV systems, enabling real-time risk identification and adaptive warnings. A closed-loop reflection mechanism ensures continuous improvement by refining policies through iterative learning. This approach enhances safety, responsiveness, and adaptability, addressing the challenges of unpredictable, high-risk scenarios.</p>
 </div>
 
 <div class="content">
     <h2 class="section-title">Sample Reasoning Process</h2>
     <img src="figures/Fig.3.png" alt="Results and Evaluation">
-    <p>
-        The process starts with scenario description, which outlines the vehicle's state, traffic dynamics, and available actions. Dynamic risk quantification follows, using heatmaps and textual notifications to identify high-risk traffic components. Finally, the reasoning module integrates these inputs to assess lane-change feasibility and determine the optimal driving strategies. By incorporating all relevant environmental details, this streamlined process ensures comprehensive decision-making.
+    <p>The process starts with scenario description, which outlines the vehicle's state, traffic dynamics, and available actions. Dynamic risk quantification follows, using heatmaps and textual notifications to identify high-risk traffic components. Finally, the reasoning module integrates these inputs to assess lane-change feasibility and determine the optimal driving strategies. By incorporating all relevant environmental details, this streamlined process ensures comprehensive decision-making.</p>
 </div>
 
 <footer>
