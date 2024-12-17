@@ -15,26 +15,15 @@ class reasoning:
         oai_api_type = os.getenv("OPENAI_API_TYPE")
         
         # Initialize LLM based on environment configuration
-        if oai_api_type == "azure":
-            print("Using Azure Chat API")
-            self.llm = AzureChatOpenAI(
-                deployment_name=os.getenv("AZURE_CHAT_DEPLOY_NAME"),
-                temperature=temperature,
-                max_tokens=2000,
-                request_timeout=60,
-                streaming=True,
-            )
-        elif oai_api_type == "openai":
-            print("Using OpenAI API")
-            self.llm = ChatOpenAI(
-                temperature=temperature,
-                model_name=os.getenv("OPENAI_CHAT_MODEL", "gpt-4"),
-                max_tokens=2000,
-                request_timeout=60,
-                streaming=True,
-            )
-        else:
-            raise ValueError("Unsupported API type. Set OPENAI_API_TYPE to either 'azure' or 'openai'.")
+        oai_api_type == "openai":
+        print("Using OpenAI API")
+        self.llm = ChatOpenAI(
+            temperature=temperature,
+            model_name=os.getenv("OPENAI_CHAT_MODEL", "gpt-4"),
+            max_tokens=2000,
+            request_timeout=60,
+            streaming=True,
+        )
 
     # Modify the few_shot_decision method in the DriverAgent class to add extra instructions in human_message
 # Modify the few_shot_decision method in the DriverAgent class
