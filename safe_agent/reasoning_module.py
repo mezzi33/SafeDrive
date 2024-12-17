@@ -15,8 +15,7 @@ class reasoning:
         oai_api_type = os.getenv("OPENAI_API_TYPE")
         
         # Initialize LLM based on environment configuration
-        oai_api_type == "openai":
-        print("Using OpenAI API")
+        oai_api_type == "openai"
         self.llm = ChatOpenAI(
             temperature=temperature,
             model_name=os.getenv("OPENAI_CHAT_MODEL", "gpt-4"),

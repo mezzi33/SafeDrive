@@ -60,8 +60,8 @@ memory_path = "./memories"
 # Initialize embeddings, vector store, and agents
 embedding_function = OpenAIEmbeddings()
 vector_store = Chroma(embedding_function=embedding_function, persist_directory=memory_path)
-driver_agent = DriverAgent(temperature=0.5, verbose=True)
-reflection_agent = ReflectionAgent() if reflection_module_enabled else None
+driver_agent = reasoning(temperature=0.5, verbose=True)
+reflection_agent = reflection() if reflection_module_enabled else None
 
 # Process test cases
 print("Processing test cases...")
