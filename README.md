@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ## 2. Configuration
 OPENAI_API_TYPE: 'openai'   
 OPENAI_KEY: 'sk-xxxxxx'  
-OPENAI_CHAT_MODEL: 'gpt-4o'  # Alternative: 'gpt-4'  
+OPENAI_CHAT_MODEL: 'gpt-4'  # Alternative: 'gpt-4o'  
 
 
 ## 3. Running SafeDrive
