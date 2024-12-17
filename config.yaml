@@ -1,6 +1,6 @@
 OPENAI_API_TYPE: 'openai'
 OPENAI_KEY: 'your-api-key-here' 
-OPENAI_CHAT_MODEL: 'gpt-4'
+OPENAI_CHAT_MODEL: 'gpt-4'  # Alternative: 'gpt-4o'  
 
 temperature: 0.5
 verbose: true
