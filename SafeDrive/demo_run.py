@@ -43,7 +43,7 @@ def parse_test_case(file_path):
 
 
 # Configuration setup
-with open("config_highd.yaml", 'r') as file:
+with open("config.yaml", 'r') as file:
     config = yaml.safe_load(file)
 
 os.environ["OPENAI_API_TYPE"] = config.get("OPENAI_API_TYPE", "openai")
